@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/ic_launcher_background">
+    <TextView
+        android:id="@+id/tv_my_stopwatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Watch"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="@android:color/holo_blue_light"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_stopwatch"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:text="00:00:00"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="40sp"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:textAllCaps="false"/>-->
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace" />
+
+    <Button
+        android:id="@+id/btn_start_stopwatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Start"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btn_reset_stopwatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@color/black"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_pause_stopwatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:backgroundTint="#F32013"
+        android:textColor="@android:color/black"
+        android:textAllCaps="false"
+        />
+    <TextView
+        android:id="@+id/text_view2"
+        android:layout_width="150dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_margin="10dp"/>
+
+
+</LinearLayout>
